@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom"; // Use HashRouter for Vercel
 import AppRouter from "./AppRouter";
 import { AppProvider } from "./utils/AppContext";
 import Navbar from "./components/Navbar";
@@ -10,8 +10,7 @@ import VoiceAssistant from "./components/VoiceAssistant";
 export default function App() {
   return (
     <AppProvider>
-      <BrowserRouter basename="/health-connect">
-        {/* ADD THESE MOBILE CLASSES */}
+      <HashRouter>
         <div className="app-root mobile-container">
           <Navbar />
           <main className="main-content container">
@@ -21,7 +20,7 @@ export default function App() {
           <ChatbotWidget />
           <VoiceAssistant />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </AppProvider>
   );
 }
