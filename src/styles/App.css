@@ -1,0 +1,36 @@
+:root{
+  --bg:#f7f9fc;
+  --text:#12202b;
+  --primary:#1e88e5;
+  --accent:#0b74de;
+  --muted:#6b7280;
+  --card:#fff;
+  --danger:#d32f2f;
+}
+
+.app-theme-dark {
+  --bg:#0b1220;
+  --text:#e6eef8;
+  --primary:#3ea6ff;
+  --card:#0f1720;
+  --muted:#9aa7b2;
+}
+
+body, html, #root { height:100%; margin:0; font-family:Inter, system-ui, Arial, sans-serif; }
+
+.app-root {
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  background:var(--bg);
+  color:var(--text);
+}
+
+.main-content { flex:1; padding:1.25rem; max-width:1200px; margin:0 auto; width:100%; }
+
+.page { margin-bottom:2rem; }
+
+.hero { background:linear-gradient(90deg, rgba(30,136,229,0.08), rgba(11,116,222,0.06)); padding:1.5rem; border-radius:12px; margin-bottom:1rem; }
+
+.hero h1 { margin:0 0 .5rem 0; }
+.hero-actions .btn { margin-right:0.5rem; }
