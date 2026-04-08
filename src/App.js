@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import AppRouter from "./AppRouter";
 import { AppProvider } from "./utils/AppContext";
 import Navbar from "./components/Navbar";
