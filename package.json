@@ -2,7 +2,6 @@
   "name": "moh-portal",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://luwis0000.github.io/health-connect",
   "dependencies": {
     "geolib": "^3.3.4",
     "leaflet": "^1.9.4",
